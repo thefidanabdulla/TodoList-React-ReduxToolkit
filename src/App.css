@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: #1D809F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  margin-top: 30px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #145569;
+  padding-bottom: 20px;
+}
+.todoHeader{
+  width: 100%;
+  background: #800000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+.todoHeader h1{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.addUser{
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.addUser input,
+.addUser button{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.addUser input{
+  width: 50%;
+  padding: 15px 10px;
+}
+.addUser button{
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 700;
+  background:seagreen;
+}
+.displayUsers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.userItem{
+  width: 700px;
+  padding:  15px;
+  background-color: #5dabc0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.todoName{
+  font-size: 1.2rem;
+  font-weight: thin;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.todoCrud{
+  display: flex;
+  gap: 10px;
+}
+.todoCrud input,
+.todoCrud button{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.todoCrud button{
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.updateBtn{
+  background: #E2A906;
+}
+.deleteBtn{
+  background: crimson;
+}
+
+.checked:checked ~ label{
+  text-decoration:line-through;
+  color: rgba(0, 0,0, .6);
+}
